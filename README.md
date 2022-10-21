@@ -32,7 +32,7 @@ Download the lastest .whl or .tar.gz file found in the Releases section.
 
 Install it with pip:
 
-`pip3 install dist/rxls-1.0.0-py3-none-any.whl`
+`pip3 install rxls-1.0.0-py3-none-any.whl`
 
 The command should now be accessible using `rxls`. Type `rxls -h` for usage details. See Configuration below before running other commands.
 
