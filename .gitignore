@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#ignore personal connection.conf
+/connection.conf
+
+#ignore macOS
+.DS_Store
