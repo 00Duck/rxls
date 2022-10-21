@@ -1,5 +1,5 @@
-### What is this?
-This program reads .xlsx spreadsheets and converts each row of data into a REST call to ServiceNow. It can read any sheet with the following format:
+# RXLS
+Read .xlsx spreadsheets and convert each row of data into a REST call to ServiceNow. This tool can read any sheet with the following format:
 
 | Col 1 | Col 2 | Col 3 |
 
@@ -27,7 +27,7 @@ The spreadsheet above is converted to the following:
     "Col 3": "data 2.3"
 }
 ```
-### Installation
+## Installation
 Download the lastest .whl or .tar.gz file found in the Releases section.
 
 Install it with pip:
@@ -36,7 +36,7 @@ Install it with pip:
 
 The command should now be accessible using `rxls`. Type `rxls -h` for usage details. See Configuration below before running other commands.
 
-### Configuration
+## Configuration
 The requests made to ServiceNow reference a file called `connection.conf`. This file  must include the following information:
 
 - Section name: This is the environment/instance name of ServiceNow to connect to. Specify a new section for each connection you wish to store and reference later.
@@ -68,7 +68,7 @@ pass = my super secret password
 
 Please ensure that the `connection.conf` file is stored in the same location as the spreadsheets.
 
-### Example Usage
+## Example Usage
 
 Get help about usage:
 
@@ -82,7 +82,7 @@ Sends four rows of data, skipping the first two (including the header). In other
 
 `rxls -i test.xlsx -e myclientdev -r 2:4`
 
-### Build
+## Building
 Make sure the latest version of PyPA's build is installed:
 
 `python3 -m pip install --upgrade build`
